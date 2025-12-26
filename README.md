@@ -95,8 +95,8 @@ project-name/
  ├─ CODE_OF_CONDUCT.md
  ├─ SECURITY.md
  ├─ LICENSE                   # A LICENSE NOTICE
- ├─ README.md                 # A full road map how to use the SDK
- └─ ROADMAP.md
+ ├─ README.md                 
+ └─ ROADMAP.md                # A full road map how to use the SDK
 ```
 
 **Platform-specific SDK repositories** (maintained separately):
