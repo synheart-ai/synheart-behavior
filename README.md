@@ -202,10 +202,15 @@ All metrics are bounded, normalized, and numerically stable.
 
 **Hard Guarantees**
 ✅ No PII
+
 ✅ No content capture
+
 ✅ No keystroke logging
+
 ✅ No audio or visual recording
+
 ✅ Permission-scoped tracking only
+
 ✅ No tracking across unconsented apps
 
 **Connectivity Model**
