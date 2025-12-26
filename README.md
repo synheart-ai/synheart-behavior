@@ -1,33 +1,56 @@
 # Synheart Behavior
 
-**Digital behavioral signal capture — privacy-first interaction pattern analysis**
+**Privacy-first digital behavior modeling from interaction patterns**
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Platform Support](https://img.shields.io/badge/platforms-Python%20%7C%20Dart%20%7C%20Kotlin%20%7C%20Swift-blue.svg)](#-sdks)
 
-The Synheart Behavior SDK captures digital behavioral signals from the user's device to help Synheart compute behavioral patterns, focus likelihood, digital distraction, emotional correlates, cognitive workload, and behavioral fatigue.
 
-**Privacy-First Design**: The Behavior SDK does not collect content, text, or personal user data. It collects only derived interaction metadata such as tap frequency, typing cadence variance, scroll velocity, app switching, idle duration, notification load, and micro-session fragmentation.
+## Overview
 
-## 🚀 Features
+Synheart Behavior is a cross-platform SDK for capturing and transforming digital interaction patterns into numerical behavioral signals.
 
-- **🔒 Privacy-First**: No content extraction, no keylogging, metadata only
-- **📊 Behavioral Metrics**: Tap rate, typing cadence, scroll velocity, app switching
-- **⚡ On-Device Processing**: All feature computation happens locally
-- **🎯 HSI Integration**: Seamless integration with HSI Runtime
-- **📱 Multi-Platform**: Python, Flutter/Dart, Android/Kotlin, iOS/Swift
-- **🔐 Consent-Gated**: Respects user privacy preferences
-- **⚙️ Lightweight**: ≤ 1% CPU, ≤ 10MB RAM, < 0.3%/hr battery impact
+The SDK models how users interact with digital systems timing, rhythm, switching, and fragmentation without ever accessing content, text, or personal data.
+
+These behavioral signals power downstream systems such as:
+- Focus and distraction inference
+- Digital wellness analytics
+- Cognitive load and fatigue estimation
+- Multimodal human state modeling (HSI)
+
+Important:
+Synheart Behavior analyzes interaction dynamics, not what users type, read, or see.
+
+
+## Core Principles
+
+- Privacy-by-design
+- Metadata only — never content
+- Permission-scoped tracking
+- On-device aggregation first
+- Numerical, interpretable representations
+
+
+## 🚀 Key Features
+
+🔒 **Privacy-First**: No content, no text, no audio, no screen capture
+
+📊 **Behavioral Metrics**: Interaction intensity, task switching, idle fragmentation, burstiness, distraction and focus proxies
+
+⚡ **On-Device Processing**: Feature extraction and aggregation run locally
+
+🎯 **HSI-Ready**: Produces structured behavioral vectors for Synheart HSI fusion
+
+📱 **Multi-Platform SDKs**: Python, Flutter/Dart, Android (Kotlin), iOS (Swift)
+
+🔐 **Consent-Gated**: Fully controlled by user permission and policy enforcement
+
+🪶 **Lightweight**: Designed for continuous background operation with minimal CPU and battery impact
+
 
 ## 📦 SDKs
 
 All SDKs provide **identical functionality** with platform-idiomatic APIs. Each SDK is maintained in its own repository:
-
-### Python SDK
-```bash
-pip install synheart-behavior
-```
-📖 **Repository**: [synheart-behavior-python](https://github.com/synheart-ai/synheart-behavior-python)
 
 ### Flutter/Dart SDK
 ```yaml
@@ -53,20 +76,25 @@ dependencies: [
 ```
 📖 **Repository**: [synheart-behavior-swift](https://github.com/synheart-ai/synheart-behavior-swift)
 
+
 ## 📂 Repository Structure
 
-This repository serves as the **source of truth** for shared resources across all SDK implementations:
+This repository serves as the **canonical specification hub** for shared resources across all SDK implementations:
 
 ```
-synheart-behavior/
-├── docs/                          # Technical documentation
-│   ├── ARCHITECTURE.md            # System architecture
-│   ├── API_REFERENCE.md           # API documentation
-│   └── PRIVACY.md                 # Privacy guarantees
-│
-├── examples/                      # Cross-platform example applications
-├── scripts/                       # Build and deployment scripts
-└── CONTRIBUTING.md                # Contribution guidelines for all SDKs
+project-name/
+ ├─ docs/                     # Necessary documents of the repo/SDK
+ ├─ models/                   # ML Models that the SDK is going to use
+ ├─ examples/                 # Examples how you can use the SDK
+ ├─ scripts/                  # where the SDK exists 
+ ├─ .github/                  # Github workflow of CI/CD
+ │   ├─ ISSUE_TEMPLATE/
+ │   ├─ workflows/
+ ├─ CONTRIBUTING.md           # A guideline how to contribute on this SDK 
+ ├─ CODE_OF_CONDUCT.md
+ ├─ SECURITY.md
+ ├─ LICENSE                   # A LICENSE NOTICE                 
+ └─ README.md
 ```
 
 **Platform-specific SDK repositories** (maintained separately):
@@ -75,135 +103,140 @@ synheart-behavior/
 - [synheart-behavior-kotlin](https://github.com/synheart-ai/synheart-behavior-kotlin) - Android/Kotlin SDK
 - [synheart-behavior-swift](https://github.com/synheart-ai/synheart-behavior-swift) - iOS/Swift SDK
 
-## 🎯 Quick Start
-
-### Python
-
-```python
-from synheart_behavior import BehaviorCollector, BehaviorConfig
-
-# Initialize collector
-config = BehaviorConfig()
-collector = BehaviorCollector.initialize(config)
-
-# Start collecting events
-collector.start()
-
-# Collect interaction events
-collector.collect_tap(x=100, y=200, timestamp=1234567890)
-collector.collect_scroll(delta=50, velocity=2.5)
-collector.collect_keystroke_timing(duration_ms=120)
-
-# Get behavior window
-window = collector.get_window()  # 30s or 5m window
-print(f"Tap Rate: {window.features.tap_rate_norm}")
-print(f"Distraction Score: {window.features.distraction_score}")
-```
-
-### Flutter/Dart
-
-```dart
-import 'package:synheart_behavior/synheart_behavior.dart';
-
-// Initialize
-final collector = BehaviorCollector.initialize(
-  config: BehaviorConfig(),
-);
-
-// Start collecting
-collector.start();
-
-// Collect events
-collector.collectTap(x: 100, y: 200);
-collector.collectScroll(delta: 50, velocity: 2.5);
-
-// Get behavior window
-final window = collector.getWindow();
-print('Tap Rate: ${window.features.tapRateNorm}');
-```
 
 ## 🏗️ Architecture
 
-### Behavior Signal Types
+### Behavioral Model
 
-The SDK captures five categories of behavioral signals:
+**What Is Collected**
+The SDK captures event-level interaction metadata, such as:
+- Tap, scroll, swipe events (timing + physical properties only)
+- App foreground/background transitions
+- Idle gaps and interaction pauses
+- Notification and call events (event only, no content)
+- Motion state (sitting, standing, moving, laying)
 
-1. **Interaction Signals**: Taps, touch gestures, keystroke timings (NOT content), scroll events, drag gestures
-2. **Activity/Inactivity Signals**: Idle periods, breaks in input, micro-session detection
-3. **Environmental Digital Context**: Screen on/off, foreground app changes (app names optionally hashed), OS-level notifications (metadata only)
-4. **Multitasking Signals**: Task switching frequency, interruptions (notifications triggered → user opened)
-5. **Behavioral Stability Signals**: Typing cadence stability, scroll cadence stability, burstiness of interactions, session fragmentation
+**What Is Not Collected**
+
+- Typed characters or text
+- Notification content or sender identity
+- Call audio or voice data
+- Screenshots or screen recordings
+- URLs, app UI data, or semantics
+- Clipboard, camera, or microphone data
+
+### Events and Sessions
+**Event**
+An event is a single atomic interaction: tap, scroll, swipe, notification, call, idle_gap.
+Each event contains:
+- timestamp
+- event type
+- session ID
+- non-semantic metrics (e.g., duration, velocity)
+
+**Session**
+A session is a continuous period of interaction with an application, bounded by: app open / close, or inactivity ≥ idle threshold (e.g., 30s)
+
+Sessions are the primary unit for short-term behavioral aggregation.
 
 ### Processing Pipeline
 
 ```
-Raw Device Events
+Raw Interaction Events
 │
 ▼
-Event Normalizer
+Event Normalization
 │
 ▼
-Behavior Feature Extractor
+Session Aggregation
 │
 ▼
-HSI_RawBehaviorVector (x_behavior)
+Behavior Feature Computation
 │
 ▼
-HSI Runtime (fusion)
+Normalized Behavioral Vector
 │
 ▼
-Behavioral Heads (MLP)
-│
-▼
-HSI State Object (behavior.{...})
+HSI Runtime / Downstream Consumers
 ```
 
 Everything runs on-device:
-- No raw events leave the device
-- Only derived features → HSI → Cloud Connector → Ingest
+- Raw events are processed locally
+- Only aggregated features are exposed
+- No raw interaction logs are transmitted by default
 
-### Behavior Features
+### Core Behavioral Metrics
 
-**Interaction Metrics**:
-- `tap_rate_norm`: Normalized tap frequency
-- `keystroke_rate_norm`: Normalized keystroke frequency
-- `scroll_velocity_norm`: Normalized scroll velocity
-- `interaction_intensity`: Overall interaction intensity
+Session-level outputs:
+- interaction_intensity
+- task_switch_rate
+- task_switch_cost
+- idle_ratio
+- fragmented_idle_ratio
+- burstiness
+- notification_load
+- scroll_jitter_rate
+- behavioral_distraction_score
+- behavioral_focus_hint
+- deep_focus_blocks
 
-**Stability Metrics**:
-- `typing_cadence_stability`: Consistency of typing rhythm
-- `scroll_cadence_stability`: Consistency of scrolling rhythm
-- `burstiness_norm`: Variability in interaction bursts
+Daily aggregation produces higher-level behavioral summaries such as:
+- fragmented time ratio
+- screen time segments (morning / afternoon / evening / night)
+- recovery-friendly minutes
+- multitasking intensity
+- behavioral stability score
+- habit strength index
 
-**Digital Context Metrics**:
-- `switch_rate_norm`: App/task switching frequency
-- `notification_score`: Notification load and impact
-- `idle_ratio`: Proportion of idle time
+All metrics are bounded, normalized, and numerically stable.
 
-**Composite Scores**:
-- `behavioral_distraction_score`: Overall distraction level
-- `behavioral_focus_hint`: Focus likelihood indicator
 
-## 🔒 Privacy & Security
+## 🔒 Privacy & Compliance
 
-### Hard Restrictions
+**Hard Guarantees**
 
-- ❌ **No keylogging**: Never captures typed characters or content
-- ❌ **No content extraction**: No text, URLs, messages, or screen content
-- ❌ **No microphone/camera**: No audio or video capture
-- ❌ **No clipboard**: No clipboard access
-- ❌ **No raw notification text**: Only metadata (count, timing)
+✅ No PII
 
-### What We Collect
+✅ No content capture
 
-✅ **Metadata Only**:
-- Tap coordinates (not content)
-- Keystroke timing (not characters)
-- Scroll velocity (not content)
-- App switching frequency (app names optionally hashed)
-- Notification metadata (count, timing, not content)
+✅ No keystroke logging
 
-### Consent Model
+✅ No audio or visual recording
+
+✅ Permission-scoped tracking only
+
+✅ No tracking across unconsented apps
+
+**Connectivity Model**
+- The SDK does not require internet, Bluetooth, or external connectivity to operate.
+- It may record a binary network availability state (online/offline) as contextual metadata.
+- No network traffic, destinations, or payloads are inspected or captured.
+- Any data transmission is explicitly consent-gated and configurable.
+
+**Regulatory Alignment**
+- GDPR / CCPA aligned
+- Data minimization and purpose limitation enforced
+- App Tracking Transparency (ATT) not required
+
+## ⚙️ Performance Targets
+
+- **CPU**: ≤ 1% average
+- **Memory**: ≤ 10 MB peak
+- **Battery**: < 0.3% per hour
+- **Event processing**: < 500 μs
+- **UI**: No UI thread blocking
+
+
+## 🎯 Use Cases
+
+- HSI Runtime — multimodal state fusion
+- Focus & Distraction Modeling
+- Digital Wellness (SWIP)
+- Behavior-Emotion Correlation
+- Longitudinal Habit Analysis
+
+
+## Consent Model
 
 The Behavior SDK only activates if:
 - User grants behavioral consent
@@ -216,32 +249,6 @@ If user disables behavioral consent:
 - Marks them as `behavior_consent=false`
 - HSI Runtime masks behavior features
 
-## 📊 Performance Requirements
-
-- **CPU**: ≤ 1% average
-- **Memory**: ≤ 10MB RAM at peak
-- **Wakeups**: No more than 2 wakeups/min
-- **Processing**: ≤ 500µs per event
-- **Frame Drops**: Never allowed in interactive UI
-- **Battery**: < 0.3%/hr impact
-
-## 🎯 Use Cases
-
-### Powers Focus Model
-- Provides behavioral inputs for focus inference
-- Task switching, interaction patterns, idle detection
-
-### Powers Emotion Model
-- Behavioral correlates of emotional states
-- Interaction patterns related to stress/calm
-
-### Powers HSI Runtime
-- Contributes `x_behavior` vector to HSI fusion
-- Enables multimodal state inference
-
-### Powers SWIP
-- Digital behavior analytics
-- App impact on focus and emotion
 
 ## 📚 Documentation
 
@@ -249,13 +256,16 @@ If user disables behavioral consent:
 - [API Reference](docs/API_REFERENCE.md) - Complete API documentation
 - [Privacy Policy](docs/PRIVACY.md) - Privacy guarantees and data handling
 
+
 ## 🤝 Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
+
 ## 📄 License
 
 Apache 2.0 License - see [LICENSE](LICENSE) for details.
+
 
 ## 🔗 Related Projects
 
