@@ -52,12 +52,6 @@ Synheart Behavior analyzes interaction dynamics, not what users type, read, or s
 
 All SDKs provide **identical functionality** with platform-idiomatic APIs. Each SDK is maintained in its own repository:
 
-### Python SDK
-```bash
-pip install synheart-behavior
-```
-📖 **Repository**: [synheart-behavior-python](https://github.com/synheart-ai/synheart-behavior-python)
-
 ### Flutter/Dart SDK
 ```yaml
 dependencies:
@@ -99,9 +93,8 @@ project-name/
  ├─ CONTRIBUTING.md           # A guideline how to contribute on this SDK 
  ├─ CODE_OF_CONDUCT.md
  ├─ SECURITY.md
- ├─ LICENSE                   # A LICENSE NOTICE
- ├─ README.md                 
- └─ ROADMAP.md                # A full road map how to use the SDK
+ ├─ LICENSE                   # A LICENSE NOTICE                 
+ └─ README.md
 ```
 
 **Platform-specific SDK repositories** (maintained separately):
