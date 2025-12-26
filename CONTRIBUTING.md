@@ -206,7 +206,7 @@ By contributing, you agree that your work will be licensed under the Apache 2.0 
 
 ## 🙏 Thank You
 
-Thank you for helping build Synheart Behavior — a privacy-respecting foundation for understanding digital interaction patterns responsibly.
+Thank you for helping build Synheart Behavior: A privacy-respecting foundation for understanding digital interaction patterns responsibly.
 
 **Author**: Israel Goytom
 **Organization**: Synheart Research & Engineering
