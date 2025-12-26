@@ -201,6 +201,7 @@ All metrics are bounded, normalized, and numerically stable.
 ## 🔒 Privacy & Compliance
 
 **Hard Guarantees**
+
 ✅ No PII
 
 ✅ No content capture
