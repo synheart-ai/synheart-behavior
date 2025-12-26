@@ -5,6 +5,7 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Platform Support](https://img.shields.io/badge/platforms-Python%20%7C%20Dart%20%7C%20Kotlin%20%7C%20Swift-blue.svg)](#-sdks)
 
+
 ## Overview
 
 Synheart Behavior is a cross-platform SDK for capturing and transforming digital interaction patterns into numerical behavioral signals.
@@ -20,6 +21,7 @@ These behavioral signals power downstream systems such as:
 Important:
 Synheart Behavior analyzes interaction dynamics, not what users type, read, or see.
 
+
 ## Core Principles
 
 - Privacy-by-design
@@ -27,6 +29,7 @@ Synheart Behavior analyzes interaction dynamics, not what users type, read, or s
 - Permission-scoped tracking
 - On-device aggregation first
 - Numerical, interpretable representations
+
 
 ## 🚀 Key Features
 
@@ -43,6 +46,7 @@ Synheart Behavior analyzes interaction dynamics, not what users type, read, or s
 🔐 **Consent-Gated**: Fully controlled by user permission and policy enforcement
 
 🪶 **Lightweight**: Designed for continuous background operation with minimal CPU and battery impact
+
 
 ## 📦 SDKs
 
@@ -78,6 +82,7 @@ dependencies: [
 ```
 📖 **Repository**: [synheart-behavior-swift](https://github.com/synheart-ai/synheart-behavior-swift)
 
+
 ## 📂 Repository Structure
 
 This repository serves as the **canonical specification hub** for shared resources across all SDK implementations:
@@ -104,6 +109,7 @@ project-name/
 - [synheart-behavior-dart](https://github.com/synheart-ai/synheart-behavior-dart) - Flutter/Dart SDK
 - [synheart-behavior-kotlin](https://github.com/synheart-ai/synheart-behavior-kotlin) - Android/Kotlin SDK
 - [synheart-behavior-swift](https://github.com/synheart-ai/synheart-behavior-swift) - iOS/Swift SDK
+
 
 ## 🏗️ Architecture
 
@@ -191,6 +197,7 @@ Daily aggregation produces higher-level behavioral summaries such as:
 
 All metrics are bounded, normalized, and numerically stable.
 
+
 ## 🔒 Privacy & Compliance
 
 **Hard Guarantees**
@@ -220,6 +227,7 @@ All metrics are bounded, normalized, and numerically stable.
 - **Event processing**: < 500 μs
 - **UI**: No UI thread blocking
 
+
 ## 🎯 Use Cases
 
 - HSI Runtime — multimodal state fusion
@@ -227,6 +235,7 @@ All metrics are bounded, normalized, and numerically stable.
 - Digital Wellness (SWIP)
 - Behavior-Emotion Correlation
 - Longitudinal Habit Analysis
+
 
 ## Consent Model
 
@@ -241,19 +250,23 @@ If user disables behavioral consent:
 - Marks them as `behavior_consent=false`
 - HSI Runtime masks behavior features
 
+
 ## 📚 Documentation
 
 - [Architecture Guide](docs/ARCHITECTURE.md) - Detailed system architecture
 - [API Reference](docs/API_REFERENCE.md) - Complete API documentation
 - [Privacy Policy](docs/PRIVACY.md) - Privacy guarantees and data handling
 
+
 ## 🤝 Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
+
 ## 📄 License
 
 Apache 2.0 License - see [LICENSE](LICENSE) for details.
+
 
 ## 🔗 Related Projects
 
