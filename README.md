@@ -25,7 +25,7 @@ Synheart Behavior analyzes interaction dynamics, not what users type, read, or s
 ## Core Principles
 
 - Privacy-by-design
-- Metadata only — never content
+- Metadata only (never content)
 - Permission-scoped tracking
 - On-device aggregation first
 - Numerical, interpretable representations
