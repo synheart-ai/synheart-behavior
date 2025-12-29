@@ -3,7 +3,7 @@
 **Privacy-first digital behavior modeling from interaction patterns**
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Platform Support](https://img.shields.io/badge/platforms-Python%20%7C%20Dart%20%7C%20Kotlin%20%7C%20Swift-blue.svg)](#-sdks)
+[![Platform Support](https://img.shields.io/badge/platforms-Dart%20%7C%20Kotlin%20%7C%20Swift-blue.svg)](#-sdks)
 
 
 ## Overview
