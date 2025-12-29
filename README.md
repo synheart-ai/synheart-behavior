@@ -110,7 +110,7 @@ project-name/
 
 **What Is Collected**
 The SDK captures event-level interaction metadata, such as:
-- Tap, scroll, swipe events (timing + physical properties only)
+- Tap, typing, scroll, swipe events (timing + physical properties only)
 - App foreground/background transitions
 - Idle gaps and interaction pauses
 - Notification and call events (event only, no content)
@@ -127,7 +127,7 @@ The SDK captures event-level interaction metadata, such as:
 
 ### Events and Sessions
 **Event**
-An event is a single atomic interaction: tap, scroll, swipe, notification, call, idle_gap.
+An event is a single atomic interaction: tap, typing, scroll, swipe, notification, call, idle_gap.
 Each event contains:
 - timestamp
 - event type
