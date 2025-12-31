@@ -41,7 +41,7 @@ Synheart Behavior analyzes interaction dynamics, not what users type, read, or s
 
 🎯 **HSI-Ready**: Produces structured behavioral vectors for Synheart HSI fusion
 
-📱 **Multi-Platform SDKs**: Python, Flutter/Dart, Android (Kotlin), iOS (Swift)
+📱 **Multi-Platform SDKs**: Flutter/Dart, Android (Kotlin), iOS (Swift)
 
 🔐 **Consent-Gated**: Fully controlled by user permission and policy enforcement
 
@@ -98,7 +98,6 @@ project-name/
 ```
 
 **Platform-specific SDK repositories** (maintained separately):
-- [synheart-behavior-python](https://github.com/synheart-ai/synheart-behavior-python) - Python SDK
 - [synheart-behavior-dart](https://github.com/synheart-ai/synheart-behavior-dart) - Flutter/Dart SDK
 - [synheart-behavior-kotlin](https://github.com/synheart-ai/synheart-behavior-kotlin) - Android/Kotlin SDK
 - [synheart-behavior-swift](https://github.com/synheart-ai/synheart-behavior-swift) - iOS/Swift SDK
