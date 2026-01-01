@@ -255,6 +255,8 @@ If user disables behavioral consent:
 - [Architecture Guide](docs/ARCHITECTURE.md) - Detailed system architecture
 - [API Reference](docs/API_REFERENCE.md) - Complete API documentation
 - [Privacy Policy](docs/PRIVACY.md) - Privacy guarantees and data handling
+- [Contributing Guide](CONTRIBUTING.md) - How to contribute (covers all SDKs)
+- [Changelog](CHANGELOG.md) - Version history for all SDKs
 
 
 ## 🤝 Contributing
