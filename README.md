@@ -3,7 +3,7 @@
 **Privacy-first digital behavior modeling from interaction patterns**
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Platform Support](https://img.shields.io/badge/platforms-Python%20%7C%20Dart%20%7C%20Kotlin%20%7C%20Swift-blue.svg)](#-sdks)
+[![Platform Support](https://img.shields.io/badge/platforms-Dart%20%7C%20Kotlin%20%7C%20Swift-blue.svg)](#-sdks)
 
 
 ## Overview
@@ -25,7 +25,7 @@ Synheart Behavior analyzes interaction dynamics, not what users type, read, or s
 ## Core Principles
 
 - Privacy-by-design
-- Metadata only — never content
+- Metadata only (never content)
 - Permission-scoped tracking
 - On-device aggregation first
 - Numerical, interpretable representations
@@ -41,7 +41,7 @@ Synheart Behavior analyzes interaction dynamics, not what users type, read, or s
 
 🎯 **HSI-Ready**: Produces structured behavioral vectors for Synheart HSI fusion
 
-📱 **Multi-Platform SDKs**: Python, Flutter/Dart, Android (Kotlin), iOS (Swift)
+📱 **Multi-Platform SDKs**: Flutter/Dart, Android (Kotlin), iOS (Swift)
 
 🔐 **Consent-Gated**: Fully controlled by user permission and policy enforcement
 
@@ -98,7 +98,6 @@ project-name/
 ```
 
 **Platform-specific SDK repositories** (maintained separately):
-- [synheart-behavior-python](https://github.com/synheart-ai/synheart-behavior-python) - Python SDK
 - [synheart-behavior-dart](https://github.com/synheart-ai/synheart-behavior-dart) - Flutter/Dart SDK
 - [synheart-behavior-kotlin](https://github.com/synheart-ai/synheart-behavior-kotlin) - Android/Kotlin SDK
 - [synheart-behavior-swift](https://github.com/synheart-ai/synheart-behavior-swift) - iOS/Swift SDK
@@ -110,7 +109,7 @@ project-name/
 
 **What Is Collected**
 The SDK captures event-level interaction metadata, such as:
-- Tap, scroll, swipe events (timing + physical properties only)
+- Tap, typing, scroll, swipe events (timing + physical properties only)
 - App foreground/background transitions
 - Idle gaps and interaction pauses
 - Notification and call events (event only, no content)
@@ -127,7 +126,7 @@ The SDK captures event-level interaction metadata, such as:
 
 ### Events and Sessions
 **Event**
-An event is a single atomic interaction: tap, scroll, swipe, notification, call, idle_gap.
+An event is a single atomic interaction: tap, typing, scroll, swipe, notification, call, idle_gap.
 Each event contains:
 - timestamp
 - event type
