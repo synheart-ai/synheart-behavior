@@ -3,7 +3,7 @@
 **Privacy-first digital behavior modeling from interaction patterns**
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Platform Support](https://img.shields.io/badge/platforms-Dart%20%7C%20Kotlin%20%7C%20Swift-blue.svg)](#-sdks)
+[![Platform Support](https://img.shields.io/badge/platforms-Dart%20%7C%20Kotlin%20%7C%20Swift%20%7C%20Chrome-blue.svg)](#-sdks)
 
 
 ## Overview
@@ -41,7 +41,7 @@ Synheart Behavior analyzes interaction dynamics, not what users type, read, or s
 
 🎯 **HSI-Ready**: Produces structured behavioral vectors for Synheart HSI fusion
 
-📱 **Multi-Platform SDKs**: Flutter/Dart, Android (Kotlin), iOS (Swift)
+📱 **Multi-Platform SDKs**: Flutter/Dart, Android (Kotlin), iOS (Swift), Chrome Extension
 
 🔐 **Consent-Gated**: Fully controlled by user permission and policy enforcement
 
@@ -55,14 +55,14 @@ All SDKs provide **identical functionality** with platform-idiomatic APIs. Each 
 ### Flutter/Dart SDK
 ```yaml
 dependencies:
-  synheart_behavior: ^0.1.0
+  synheart_behavior: ^0.2.1
 ```
 📖 **Repository**: [synheart-behavior-dart](https://github.com/synheart-ai/synheart-behavior-dart)
 
 ### Android SDK (Kotlin)
 ```kotlin
 dependencies {
-    implementation("ai.synheart:behavior:0.1.0")
+    implementation("ai.synheart:behavior:0.4.1")
 }
 ```
 📖 **Repository**: [synheart-behavior-kotlin](https://github.com/synheart-ai/synheart-behavior-kotlin)
@@ -71,10 +71,15 @@ dependencies {
 **Swift Package Manager:**
 ```swift
 dependencies: [
-    .package(url: "https://github.com/synheart-ai/synheart-behavior-swift.git", from: "0.1.0")
+    .package(url: "https://github.com/synheart-ai/synheart-behavior-swift.git", from: "0.3.0")
 ]
 ```
 📖 **Repository**: [synheart-behavior-swift](https://github.com/synheart-ai/synheart-behavior-swift)
+
+### Chrome Extension
+Load unpacked from [synheart-behavior-chrome](https://github.com/synheart-ai/synheart-behavior-chrome) or install from a release ZIP.
+
+📖 **Repository**: [synheart-behavior-chrome](https://github.com/synheart-ai/synheart-behavior-chrome)
 
 
 ## 📂 Repository Structure
@@ -101,6 +106,7 @@ project-name/
 - [synheart-behavior-dart](https://github.com/synheart-ai/synheart-behavior-dart) - Flutter/Dart SDK
 - [synheart-behavior-kotlin](https://github.com/synheart-ai/synheart-behavior-kotlin) - Android/Kotlin SDK
 - [synheart-behavior-swift](https://github.com/synheart-ai/synheart-behavior-swift) - iOS/Swift SDK
+- [synheart-behavior-chrome](https://github.com/synheart-ai/synheart-behavior-chrome) - Chrome Extension
 
 
 ## 🏗️ Architecture
@@ -251,11 +257,10 @@ If user disables behavioral consent:
 
 ## 📚 Documentation
 
-- [Architecture Guide](docs/ARCHITECTURE.md) - Detailed system architecture
-- [API Reference](docs/API_REFERENCE.md) - Complete API documentation
-- [Privacy Policy](docs/PRIVACY.md) - Privacy guarantees and data handling
 - [Contributing Guide](CONTRIBUTING.md) - How to contribute (covers all SDKs)
-- [Changelog](CHANGELOG.md) - Version history for all SDKs
+- [Changelog](CHANGELOG.md) - Specification version history
+- [Security Policy](SECURITY.md) - Vulnerability reporting and security practices
+- [Code of Conduct](CODE_OF_CONDUCT.md) - Community guidelines
 
 
 ## 🤝 Contributing
@@ -270,9 +275,15 @@ Apache 2.0 License - see [LICENSE](LICENSE) for details.
 
 ## 🔗 Related Projects
 
-- [Synheart Focus](https://github.com/synheart-ai/synheart-focus) - Cognitive concentration inference
-- [Synheart Emotion](https://github.com/synheart-ai/synheart-emotion) - Physiological emotion inference
-- [Synheart Core SDK](https://github.com/synheart-ai/synheart-core-sdk) - Unified SDK for all Synheart features
+| Repository | Description |
+|---|---|
+| [synheart-behavior-dart](https://github.com/synheart-ai/synheart-behavior-dart) | Flutter/Dart SDK |
+| [synheart-behavior-kotlin](https://github.com/synheart-ai/synheart-behavior-kotlin) | Android/Kotlin SDK |
+| [synheart-behavior-swift](https://github.com/synheart-ai/synheart-behavior-swift) | iOS/Swift SDK |
+| [synheart-behavior-chrome](https://github.com/synheart-ai/synheart-behavior-chrome) | Chrome Extension |
+| [synheart-focus](https://github.com/synheart-ai/synheart-focus) | Cognitive concentration inference |
+| [synheart-emotion](https://github.com/synheart-ai/synheart-emotion) | Physiological emotion inference |
+| [synheart-core](https://github.com/synheart-ai/synheart-core) | Core orchestration specification |
 
 ---
 

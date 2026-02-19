@@ -50,9 +50,9 @@ We take security vulnerabilities seriously. If you discover a security vulnerabi
 
 ## Privacy Considerations
 
-Synheart Focus is designed with privacy-first principles:
+Synheart Behavior is designed with privacy-first principles:
 
-- **No Raw Data Storage**: Only derived focus signals are stored
+- **No Raw Data Storage**: Only derived behavioral signals are stored
 - **On-Device Processing**: All inference happens locally
 - **Consent-Gated**: Behavioral data requires explicit consent
 - **No Content Extraction**: No text, URLs, or screen content
@@ -61,8 +61,8 @@ Synheart Focus is designed with privacy-first principles:
 ## Known Security Considerations
 
 ### Data Privacy
-- Focus scores are derived signals, not raw biometrics
-- No personal identifiers in focus data
+- Behavioral metrics are derived signals, not raw biometrics
+- No personal identifiers in behavioral data
 - User consent required for cloud uploads
 
 ### Platform Permissions
