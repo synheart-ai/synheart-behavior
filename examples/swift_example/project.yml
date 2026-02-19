@@ -1,0 +1,24 @@
+name: SynheartBehaviorExample
+options:
+  bundleIdPrefix: ai.synheart.behavior
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "15.0"
+
+packages:
+  SynheartBehavior:
+    path: ../../../synheart-behavior-swift
+
+targets:
+  SynheartBehaviorExample:
+    type: application
+    platform: iOS
+    sources:
+      - SynheartBehaviorExample
+    settings:
+      base:
+        INFOPLIST_FILE: SynheartBehaviorExample/Info.plist
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1,2"
+    dependencies:
+      - package: SynheartBehavior

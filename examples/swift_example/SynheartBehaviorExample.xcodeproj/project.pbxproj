@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8480E2C589143A04BF307CE3 /* InteractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAD4FC61499B83BD56B5277 /* InteractionView.swift */; };
+		8566FCDA0ECFE4B99D1C3AA8 /* SynheartBehaviorExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF180B74CD9527D4183302C8 /* SynheartBehaviorExampleApp.swift */; };
+		8C8317B0BF4FC4C2E8D601F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D04F6688A5BB29B24E7B1AB9 /* Assets.xcassets */; };
+		8F2D8C32DE2DD258F511A893 /* StatusCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D7168E6DCA8998DBC8705C /* StatusCardView.swift */; };
+		90FA568B195F2E21C11ECE9F /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4995B325099990A3D82F4D3E /* ResultsView.swift */; };
+		AB7006DF7772922CA7C51762 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946E26F9A7C35C5B142BDF1 /* DashboardView.swift */; };
+		B43B10F752225F635EB2A885 /* BehaviorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2095A7B8E5A06A122A8A0C41 /* BehaviorViewModel.swift */; };
+		B87E74EC2DF397C38F6ECE59 /* SynheartBehavior in Frameworks */ = {isa = PBXBuildFile; productRef = 25BFB04C0959419B35CF0F6A /* SynheartBehavior */; };
+		D21A0F9CD8AA6941945E7A31 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E9E1F326A468C0EF42A8E /* EventCardView.swift */; };
+		E4A1746C010C3D0BFE519E3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67EB114621935D64144F628 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2095A7B8E5A06A122A8A0C41 /* BehaviorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorViewModel.swift; sourceTree = "<group>"; };
+		256E9E1F326A468C0EF42A8E /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
+		35D7168E6DCA8998DBC8705C /* StatusCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCardView.swift; sourceTree = "<group>"; };
+		4995B325099990A3D82F4D3E /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		67CD0E0F7CE9F9F4021958D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6946E26F9A7C35C5B142BDF1 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		9DAD4FC61499B83BD56B5277 /* InteractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionView.swift; sourceTree = "<group>"; };
+		BF180B74CD9527D4183302C8 /* SynheartBehaviorExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynheartBehaviorExampleApp.swift; sourceTree = "<group>"; };
+		D04F6688A5BB29B24E7B1AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFEB453E5D3DE11C845D2F80 /* synheart-behavior-swift */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "synheart-behavior-swift"; path = "../../../synheart-behavior-swift"; sourceTree = SOURCE_ROOT; };
+		E92D06ACB9F016FA46467DA2 /* SynheartBehaviorExample.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SynheartBehaviorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67EB114621935D64144F628 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE0D065392A8B1505FB225E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B87E74EC2DF397C38F6ECE59 /* SynheartBehavior in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4887987B6C9A194E5580142E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				256E9E1F326A468C0EF42A8E /* EventCardView.swift */,
+				35D7168E6DCA8998DBC8705C /* StatusCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		736FA7BDF08FAC5B86815406 /* SynheartBehaviorExample */ = {
+			isa = PBXGroup;
+			children = (
+				D04F6688A5BB29B24E7B1AB9 /* Assets.xcassets */,
+				F67EB114621935D64144F628 /* ContentView.swift */,
+				67CD0E0F7CE9F9F4021958D0 /* Info.plist */,
+				BF180B74CD9527D4183302C8 /* SynheartBehaviorExampleApp.swift */,
+				8D97E86257F06372015B959D /* ViewModels */,
+				FEB7B33B0D8EB510B4B9B969 /* Views */,
+			);
+			path = SynheartBehaviorExample;
+			sourceTree = "<group>";
+		};
+		8D97E86257F06372015B959D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2095A7B8E5A06A122A8A0C41 /* BehaviorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9DD270A3B8F5795F7C6CB083 = {
+			isa = PBXGroup;
+			children = (
+				BAF8C3680714665A909AE80D /* Packages */,
+				736FA7BDF08FAC5B86815406 /* SynheartBehaviorExample */,
+				EC12C8280F7653F13AF4E37C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAF8C3680714665A909AE80D /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				DFEB453E5D3DE11C845D2F80 /* synheart-behavior-swift */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		EC12C8280F7653F13AF4E37C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E92D06ACB9F016FA46467DA2 /* SynheartBehaviorExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEB7B33B0D8EB510B4B9B969 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6946E26F9A7C35C5B142BDF1 /* DashboardView.swift */,
+				9DAD4FC61499B83BD56B5277 /* InteractionView.swift */,
+				4995B325099990A3D82F4D3E /* ResultsView.swift */,
+				4887987B6C9A194E5580142E /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CC82C2B1FBDEFCFBB612311 /* SynheartBehaviorExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F3E2D1283B30EAE564F7AB2 /* Build configuration list for PBXNativeTarget "SynheartBehaviorExample" */;
+			buildPhases = (
+				EAE98D25C643D7C805B6D9DA /* Sources */,
+				34A58F30EA6C377A0294C375 /* Resources */,
+				CE0D065392A8B1505FB225E1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SynheartBehaviorExample;
+			packageProductDependencies = (
+				25BFB04C0959419B35CF0F6A /* SynheartBehavior */,
+			);
+			productName = SynheartBehaviorExample;
+			productReference = E92D06ACB9F016FA46467DA2 /* SynheartBehaviorExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABF8A74DE286D5EA626BF6CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = AE0E1FC38D6D2D815A47C6B6 /* Build configuration list for PBXProject "SynheartBehaviorExample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9DD270A3B8F5795F7C6CB083;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A2A8B23952970819936D5B45 /* XCLocalSwiftPackageReference "../../../synheart-behavior-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CC82C2B1FBDEFCFBB612311 /* SynheartBehaviorExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34A58F30EA6C377A0294C375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C8317B0BF4FC4C2E8D601F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAE98D25C643D7C805B6D9DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43B10F752225F635EB2A885 /* BehaviorViewModel.swift in Sources */,
+				E4A1746C010C3D0BFE519E3C /* ContentView.swift in Sources */,
+				AB7006DF7772922CA7C51762 /* DashboardView.swift in Sources */,
+				D21A0F9CD8AA6941945E7A31 /* EventCardView.swift in Sources */,
+				8480E2C589143A04BF307CE3 /* InteractionView.swift in Sources */,
+				90FA568B195F2E21C11ECE9F /* ResultsView.swift in Sources */,
+				8F2D8C32DE2DD258F511A893 /* StatusCardView.swift in Sources */,
+				8566FCDA0ECFE4B99D1C3AA8 /* SynheartBehaviorExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		626DBDDEA1C39817B93A4C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SynheartBehaviorExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.synheart.behavior.SynheartBehaviorExample;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2B3AF785124889D4309DA4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E63D0C29386674BB4D511A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ED285C48F6754FBE8E1F7045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SynheartBehaviorExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.synheart.behavior.SynheartBehaviorExample;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F3E2D1283B30EAE564F7AB2 /* Build configuration list for PBXNativeTarget "SynheartBehaviorExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				626DBDDEA1C39817B93A4C04 /* Debug */,
+				ED285C48F6754FBE8E1F7045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AE0E1FC38D6D2D815A47C6B6 /* Build configuration list for PBXProject "SynheartBehaviorExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63D0C29386674BB4D511A3C /* Debug */,
+				B2B3AF785124889D4309DA4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A2A8B23952970819936D5B45 /* XCLocalSwiftPackageReference "../../../synheart-behavior-swift" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../synheart-behavior-swift";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25BFB04C0959419B35CF0F6A /* SynheartBehavior */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SynheartBehavior;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ABF8A74DE286D5EA626BF6CD /* Project object */;
+}
